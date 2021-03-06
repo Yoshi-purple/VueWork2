@@ -7,7 +7,7 @@
 			</div>
 		<div>
 		<p>-ご相談内容-</p>
-		<textarea name="" id="" cols="100" rows="10"></textarea>
+		<textarea cols="100" rows="20"></textarea>
 		</div>
 		</div>
 		<div class="buttons">
