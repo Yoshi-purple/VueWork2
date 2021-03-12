@@ -7,11 +7,17 @@ const months = [];
 const dates = [];
 
 function yearsAdd() {
-  for (let i = 1990; i < 2021; i++) {
+  for (let i = 1910; i < 2021; i++) {
     if (i >= 2019) {
       years.push({ year: i, japanese: `(令和${i - 2018})`, id: `year_${i}` });
-    } else {
+    } else if (i >= 1989) {
       years.push({ year: i, japanese: `(平成${i - 1988})`, id: `year_${i}` });
+    } else if (i >= 1926) {
+      years.push({ year: i, japanese: `(昭和${i - 1925})`, id: `year_${i}` });
+    } else if (i >= 1912) {
+      years.push({ year: i, japanese: `(大正${i - 1911})`, id: `year_${i}` });
+    } else if (i >= 1910) {
+      years.push({ year: i, japanese: `(明治${i - 1867})`, id: `year_${i}` });
     }
   }
 }
