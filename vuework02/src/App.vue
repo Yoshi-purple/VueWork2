@@ -16,7 +16,9 @@
   color: #2c3e50;
 }
 
-
+ .smallHead {
+	color: rgb(59, 94, 158);
+ }
 
 
 

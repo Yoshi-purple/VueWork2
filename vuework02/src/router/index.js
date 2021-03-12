@@ -5,6 +5,7 @@ import VueRouter from 'vue-router';
 import Home from '../views/Home.vue';
 import Step2 from '../views/Step2.vue';
 import Step3 from '../views/Step3.vue';
+import Step4 from '../views/Step4.vue';
 
 Vue.use(VueRouter);
 
@@ -23,6 +24,11 @@ const routes = [
     path: '/step3',
     name: 'Step3',
     component: Step3,
+  },
+  {
+    path: '/step4',
+    name: 'Step4',
+    component: Step4,
   },
 ];
 
