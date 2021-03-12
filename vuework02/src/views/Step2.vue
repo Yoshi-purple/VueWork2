@@ -44,21 +44,21 @@ export default {
 	this.isActive2 = !this.isActive2
   },
     addAnswer1(event) {
-      if(event.target.value==='はい') {
+      if(event.target.value === 'はい') {
         this.$store.state.question.no1 = 'はい'
       }else {
         this.$store.state.question.no1 = 'いいえ'
       }
   },
     addAnswer2(event) {
-      if(event.target.value==='はい') {
+      if(event.target.value === 'はい') {
         this.$store.state.question.no2 = 'はい'
       }else {
         this.$store.state.question.no2 = 'いいえ'
       }
   },
     addAnswer3(event) {
-      if(event.target.value==='はい') {
+      if(event.target.value === 'はい') {
         this.$store.state.question.no3 = 'はい'
       }else {
         this.$store.state.question.no3 = 'いいえ'

@@ -7,8 +7,8 @@
     </div>
     <div>
       <p class="smallHead">-性別-</p>
-      <input type="radio" name="gender" value="男性" @click="onMale">男性
-      <input type="radio" name="gender" value="女性" @click="onFemale">女性
+      <input type="radio" name="gender" value="男性" @click="selectedMale">男性
+      <input type="radio" name="gender" value="女性" @click="selectedFemale">女性
     </div>
     <div id="birthDates">
       <p class="smallHead">-生年月日-</p>
@@ -23,7 +23,6 @@
 </template>
  <script>
  import  { years,months,dates }  from '../helpers/definision.js'
-//  import {mapGetters } from 'vuex'
 
 
 
@@ -38,20 +37,20 @@ export default {
   
   methods: {
     
-    onMale(event) {
-       this.$store.state.gender=event.target.value
+    selectedMale(event) {
+       this.$store.state.gender = event.target.value
     },
-    onFemale(event) {
-       this.$store.state.gender=event.target.value
+    selectedFemale(event) {
+       this.$store.state.gender = event.target.value
     },
     selectedYear(event) {
-      this.$store.state.birthDate.year=event.target.value
+      this.$store.state.birthDate.year = event.target.value
     },
     selectedMonth(event) {
-      this.$store.state.birthDate.month=event.target.value
+      this.$store.state.birthDate.month = event.target.value
     },
     selectedDate(event) {
-      this.$store.state.birthDate.date=event.target.value
+      this.$store.state.birthDate.date = event.target.value
     },
   }
  
