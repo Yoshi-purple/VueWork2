@@ -8,7 +8,7 @@
     <div>
       <p class="smallHead">-性別-</p>
       <input type="radio" name="gender" value="男性" @click="onMale">男性
-      <input type="radio" name="gender" value="男性" @click="onFemale">女性
+      <input type="radio" name="gender" value="女性" @click="onFemale">女性
     </div>
     <div id="birthDates">
       <p class="smallHead">-生年月日-</p>
@@ -38,11 +38,11 @@ export default {
   
   methods: {
     
-    onMale() {
-       this.$store.state.gender='男性'
+    onMale(event) {
+       this.$store.state.gender=event.target.value
     },
-    onFemale() {
-       this.$store.state.gender='女性'
+    onFemale(event) {
+       this.$store.state.gender=event.target.value
     },
     selectedYear(event) {
       this.$store.state.birthDate.year=event.target.value
